@@ -1,3 +1,3 @@
 import regruapi
 
-print (regruapi.regRuApi.domainNop('reg.ru'))
+print (regruapi.regRuApi.domainNop('regsss2.ru'))
