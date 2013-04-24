@@ -1,4 +1,4 @@
-#import regru
+import regru
 import config
 #from regru import RegRu
 from urllib.parse import urlencode
@@ -12,6 +12,7 @@ class regRuApiDomain:
  def getApi(params, action):
    RegRu = regru.RegRu()
    apiPathDir = config.domainGlobalConsts.pathPrefix + action + config.domainGlobalConsts.pathPostfix
+   print (RegRu.generateApiUrl(apiPathDir, params))
    response = urlopen(RegRu.generateApiUrl(apiPathDir, params)) 
    jdata = eval(response.read().decode('utf8'))
    if(RegRu.checkCurrentErrors(jdata) == 1):
