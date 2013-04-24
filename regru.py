@@ -1,7 +1,6 @@
 import json
 from urllib.parse import urlencode
 from urllib.request import urlopen
-#from urllib.request import urlencode
 '''Базовый класс'''
 class RegRu:
  apiPath = 'https://api.reg.ru/api/regru2'

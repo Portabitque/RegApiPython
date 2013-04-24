@@ -1,4 +1,4 @@
-import regru
+#import regru
 import config
 #from regru import RegRu
 from urllib.parse import urlencode
