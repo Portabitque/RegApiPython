@@ -1,0 +1,23 @@
+domainGetPrices (user, password, show_renew_data, show_update_data, currency)
+domainGetSuggest (word, additional_word, category, tlds, use_hyphen, use_plural)
+domainGetPremium (tld, limit, max_chars, cat0, cat1, cat2, random)
+domainCheck (domain_name, is_transfer)
+domainCreate (
+domainTransfer
+domainGetReregData (domains, dname_matching, search_query, max_chars, min_pr, min_cy, kley, zone, views, vis, traf, price, registrar, delete_date, sort, premium, limit, limit_from)
+domainSetReregBids (contacts, nss, domains)
+domainGetUserReregBids
+domainGetDocsUploadUri
+domainUpdateContacts
+domainUpdatePrivatePersonFlag
+domainRegisterNs
+domainDeleteNs
+domainGetNss
+domainUpdateNss
+domainDelegate
+domainUndelegate
+domainTransferToAnotherAccount
+domainLookAtEnteringList
+domainAcceptOrRefuseEnteringList
+domainCancelTransfer
+domainRequestToTransfer

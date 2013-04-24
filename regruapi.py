@@ -1,23 +1,17 @@
 import regru
+import config
+#from regru import RegRu
 from urllib.parse import urlencode
 from urllib.request import urlopen
 
-class regRuApi:
+class regRuApiDomain:
  def __init__(self):
   pass
- def domainNop(varDomen):
+
+#Получаем функцию у регру
+ def getApi(params, action):
    RegRu = regru.RegRu()
-   domain = varDomen
-   apiPathDir = '/domain/nop?'
-
-   params = {
-    'username' : 'test',
-    'password' : 'test',
-    'output_content_type':'plain',
-    'show_input_params':1,
-    'domain_name': domain
-    }
-
+   apiPathDir = config.domainGlobalConsts.pathPrefix + action + config.domainGlobalConsts.pathPostfix
    response = urlopen(RegRu.generateApiUrl(apiPathDir, params)) 
    jdata = eval(response.read().decode('utf8'))
    if(RegRu.checkCurrentErrors(jdata) == 1):
